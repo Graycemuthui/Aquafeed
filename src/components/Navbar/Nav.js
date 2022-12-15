@@ -21,14 +21,14 @@ const Nav = () => {
     <nav className={sticky === "#" ? `stickyNav` : ""}>
       <div className="logo">
         <img src={logo} alt="logo" className="nav-logo" />
-        <h2 className="heading">AQUAFEEDS</h2>
+        <h2 className="heading">KAMBARE</h2>
       </div>
       <div className={`nav-links ${active ? `nav-links-toggle` : ""}`}>
         <Link to="/" onClick={() => setActive(!active)}>
           ABOUT
         </Link>
         <Link to="/orders" onClick={() => setActive(!active)}>
-          MAKE AN ORDER
+          ORDER ONLINE
         </Link>
         <Link to="/contact" onClick={() => setActive(!active)}>
           CONTACT

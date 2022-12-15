@@ -5,7 +5,7 @@ import HomePage from "./components/HomePage/HomePage";
 import Orders from "./components/Orders/Orders";
 import Contact from "./components/Contact/Contact";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <main className="content">
@@ -20,6 +20,6 @@ function App() {
       </main>
     </div>
   );
-}
+};
 
 export default App;

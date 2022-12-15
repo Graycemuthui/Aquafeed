@@ -1,27 +1,41 @@
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import "./Contact.css";
 
-function Contact() {
+const Contact = () => {
   return (
-    <Form>
+    <Form className="form">
       <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Name</Form.Label>
-        <Form.Control type="name" placeholder="Enter name" />
+        <Form.Label className="label">Name</Form.Label>
+        <Form.Control
+          size="sm"
+          type="name"
+          className="input"
+          placeholder="Enter name"
+        />
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>Email address</Form.Label>
-        <Form.Control type="email" placeholder="Enter email" />
-        <Form.Text className="text-muted">
+        <Form.Label className="label">Email address</Form.Label>
+        <Form.Control
+          size="sm"
+          className="input"
+          type="email"
+          placeholder="Enter email"
+        />
+        <Form.Text className="text-muted label">
           We'll never share your email with anyone else.
         </Form.Text>
       </Form.Group>
-
-      <Button variant="primary" type="submit">
+      <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+        <Form.Label className="label">Message</Form.Label>
+        <Form.Control as="textarea" rows={3} size="sm" className="input" />
+      </Form.Group>
+      <Button variant="primary" type="submit" className="label">
         Submit
       </Button>
     </Form>
   );
-}
+};
 
 export default Contact;
