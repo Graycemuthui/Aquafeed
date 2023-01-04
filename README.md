@@ -27,6 +27,10 @@ To get a local copy up and running follow these simple example steps.
 
 - Clone the repository to your local machine using `git clone` command
 
+### Live Demo
+
+- Here is a link to the live demo [link](https://kambareke.netlify.app/)
+
 ### Install
 
 - Install all the dependencies using `npm install`
